@@ -2,7 +2,14 @@
 using CoreWf.Benchmarks;
 
 #if RELEASE
-BenchmarkRunner.Run<RoslynValidatorReferenceVsNonReference>();
+//BenchmarkRunner.Run<RoslynValidatorReferenceVsNonReference>();
+BenchmarkRunner.Run(
+    new[]
+    {
+        typeof(RoslynValidatorReferenceVsNonReference),
+        typeof(VbCompilation),
+        typeof(Expressions)
+    });
 #else
 var e = new Expressions();
 try

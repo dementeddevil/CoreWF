@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net6.0;net6.0-windows</TargetFrameworks>
-        <Description>Unofficial port of the Windows Workflow Foundation (WF) to .NET 6</Description>
+        <TargetFrameworks>net7.0;net7.0-windows</TargetFrameworks>
+        <Description>Unofficial port of the Windows Workflow Foundation (WF) to .NET 7</Description>
         <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <GeneratePackageOnBuild Condition="$(Configuration)=='Release'">true</GeneratePackageOnBuild>
@@ -21,7 +21,7 @@
         <ProjectReference Include="..\VisualBasic\Microsoft.CodeAnalysis.VisualBasic.Scripting.vbproj" PrivateAssets="All"/>
         <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" Version="$(RoslynPackageVersion)"/>
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="$(RoslynPackageVersion)"/>
-        <PackageReference Include="System.CodeDom" Version="6.0.0"/>
+        <PackageReference Include="System.CodeDom" Version="7.0.0"/>
         <PackageReference Include="Nito.AsyncEx.Tasks" Version="5.1.2"/>
         <PackageReference Include="Microsoft.PowerFx.Interpreter" Version="0.2.1-preview"/>
         <None Include="..\..\README.md" Pack="true" PackagePath=""/>
